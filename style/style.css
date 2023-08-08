@@ -464,9 +464,9 @@ section h2 {
 
 /* subtitulo del h2 de transporte */
 .subtitulos {
+    width: 100%;
+    padding: 20px;
     text-align: center;
-    width: 90%;
-    margin: 20px;
 }
 
 /* titulo del transporte */
@@ -536,6 +536,63 @@ section h2 {
     }
 }
 
+/* galeria de hoteles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.hotel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* efecto para agrandar imagen y darle bordes */
+.hotel:hover {
+    transform: scale(1.1);
+    border: 5px solid #E18903;
+}
+
+.hotel img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.hotel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* efecto para que la imagen se ponga mas opaca al pasar mouse */
+.hotel:hover .hotel-overlay {
+    opacity: 1;
+}
+
+.hotel-name {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
 
 /* formulario main */
 form {
