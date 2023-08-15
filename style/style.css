@@ -572,7 +572,7 @@ section h2 {
 
 .hotel-overlay {
     position: absolute;
-    top: calc(100% - 100%); /* Cambiar "0" por "calc(100% - 44px)" */
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -583,7 +583,7 @@ section h2 {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
-    z-index: 2; /* Agregar esta línea */
+    z-index: 2;
 }
 
 /* efecto para que la imagen se ponga mas opaca al pasar mouse */
