@@ -543,6 +543,7 @@ section h2 {
     grid-gap: 30px;
     padding: 30px;
     margin-bottom: 50px;
+    position: relative; /* Agregar esta línea */
 }
 
 .hotel {
@@ -553,12 +554,14 @@ section h2 {
     border-radius: 5px;
     overflow: hidden;
     transition: 0.5s;
+    position: relative; /* Agregar esta línea */
 }
 
 /* efecto para agrandar imagen y darle bordes */
 .hotel:hover {
     transform: scale(1.1);
     border: 5px solid #E18903;
+    z-index: 1; /* Agregar esta línea */
 }
 
 .hotel img {
@@ -569,9 +572,9 @@ section h2 {
 
 .hotel-overlay {
     position: absolute;
-    top: 0;
+    top: calc(100% - 100%); /* Cambiar "0" por "calc(100% - 44px)" */
     left: 0;
-    height: 44px;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -580,6 +583,7 @@ section h2 {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 2; /* Agregar esta línea */
 }
 
 /* efecto para que la imagen se ponga mas opaca al pasar mouse */
