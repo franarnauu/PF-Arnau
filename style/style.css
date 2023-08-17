@@ -11,7 +11,7 @@ header {
 }
 
 .navbar-brand {
-    color: #E18903;
+    color: #ffff;
     font-weight: 700;
     display:none;
 }
@@ -125,7 +125,7 @@ nav {
 /* titulo */
 .inicio {
     color: #E18903; 
-    background-image:url("../assets/images/banner-inicio.jpg") ; 
+    background-image:url("../assets/images/banner-inicio.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     height: 400px;
@@ -216,7 +216,7 @@ section h2 {
 /* sobre nosotros banner */
 .sobre-nosotros {
     color: #E18903; 
-    background-image:url("../assets/images/banner-sobre-nosotros.png") ; 
+    background-image:url("../assets/images/banner-sobre-nosotros.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -353,7 +353,7 @@ section h2 {
 /* destinos banner */
 .destinos {
     color: #E18903; 
-    background-image:url("../assets/images/banner-destinos.png") ; 
+    background-image:url("../assets/images/banner-destinos.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -447,7 +447,7 @@ section h2 {
 /* banner de transportes */
 .transportes {
     color: #E18903; 
-    background-image:url("../assets/images/banner-transporte.png") ; 
+    background-image:url("../assets/images/banner-transporte.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -491,7 +491,7 @@ section h2 {
 .avion {
     color: #E18903; 
     text-align: center; 
-    background-image:url("../assets/images/avion.png") ; 
+    background-image:url("../assets/images/avion.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -502,7 +502,7 @@ section h2 {
 .barco {
     color: #E18903; 
     text-align: center; 
-    background-image:url("../assets/images/barco.png") ; 
+    background-image:url("../assets/images/barco.webp") ; 
     background-repeat: no-repeat; 
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -513,7 +513,7 @@ section h2 {
 .bus {
     color: #E18903; 
     text-align: center; 
-    background-image:url("../assets/images/bus.png") ; 
+    background-image:url("../assets/images/bus.webp") ; 
     background-repeat: no-repeat;
     background-size: 200%; 
     background-attachment: fixed ; 
@@ -523,15 +523,15 @@ section h2 {
 /* media para seccion de transportes */
 @media (min-width: 1024px) {
     .avion {
-        background-image:url("../assets/images/avion-desktop.png") ; 
+        background-image:url("../assets/images/avion-desktop.webp") ; 
         background-size: 150%; 
     }
     .barco {
-        background-image:url("../assets/images/barco-desktop.png") ; 
+        background-image:url("../assets/images/barco-desktop.webp") ; 
         background-size: 150%; 
     }
     .bus {
-        background-image:url("../assets/images/bus-desktop.png") ; 
+        background-image:url("../assets/images/bus-desktop.webp") ; 
         background-size: 150%; 
     }
 }
@@ -612,7 +612,7 @@ form {
 
 /* fondo del formulario */
 .form {
-    background-image: url("../assets/images/background-form.png");
+    background-image: url("../assets/images/background-form.webp");
     padding: 30px;
 }
 
