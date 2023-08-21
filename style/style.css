@@ -13,6 +13,9 @@ h2 {
   text-decoration: underline #E18903 4px;
 }
 
+/* mixin para la seccion de transportes */
+/* mixin para los banners celular */
+/* mixin para los banners desktop */
 /* header */
 header {
   background-color: black;
@@ -200,11 +203,11 @@ section h2 {
 /* destinos banner */
 .destinos {
   color: #E18903;
-  background-image: url("../assets/images/banner-destinos.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 20%;
+  background-image: url("../assets/images/banner-destinos.webp");
 }
 
 .destinos-destacados {
@@ -254,11 +257,11 @@ section h2 {
 /* banner de transportes */
 .transportes {
   color: #E18903;
-  background-image: url("../assets/images/banner-transporte.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 20%;
+  background-image: url("../assets/images/banner-transporte.webp");
 }
 
 /* subtitulo del h2 de transporte */
@@ -294,33 +297,33 @@ section h2 {
 .avion {
   color: #E18903;
   text-align: center;
-  background-image: url("../assets/images/avion.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 15%;
+  background-image: url("../assets/images/avion.webp");
 }
 
 /* transporte barco */
 .barco {
   color: #E18903;
   text-align: center;
-  background-image: url("../assets/images/barco.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 15%;
+  background-image: url("../assets/images/barco.webp");
 }
 
 /* transporte bus */
 .bus {
   color: #E18903;
   text-align: center;
-  background-image: url("../assets/images/bus.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 15%;
+  background-image: url("../assets/images/bus.webp");
 }
 
 /* galeria de hoteles */
@@ -386,11 +389,11 @@ section h2 {
 /* sobre nosotros banner */
 .sobre-nosotros {
   color: #E18903;
-  background-image: url("../assets/images/banner-sobre-nosotros.webp");
   background-repeat: no-repeat;
   background-size: 200%;
   background-attachment: fixed;
   padding: 20%;
+  background-image: url("../assets/images/banner-sobre-nosotros.webp");
 }
 
 /* nuestra historia */

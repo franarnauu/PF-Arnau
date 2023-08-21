@@ -89,12 +89,8 @@ section h2 {
 
 /* destinos banner */
 .destinos {
-    color: $main-color;
+    @include banners;
     background-image: url("../assets/images/banner-destinos.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 20%;
 }
 
 .destinos-destacados {
@@ -147,12 +143,8 @@ section h2 {
 
 /* banner de transportes */
 .transportes {
-    color: $main-color;
+    @include banners;
     background-image: url("../assets/images/banner-transporte.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 20%;
 }
 
 /* subtitulo del h2 de transporte */
@@ -186,35 +178,20 @@ section h2 {
 
 /* transporte avion */
 .avion {
-    color: $main-color;
-    text-align: center;
+    @include transporte;
     background-image: url("../assets/images/avion.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 15%;
 }
 
 /* transporte barco */
 .barco {
-    color: $main-color;
-    text-align: center;
+    @include transporte;
     background-image: url("../assets/images/barco.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 15%;
 }
 
 /* transporte bus */
 .bus {
-    color: $main-color;
-    text-align: center;
+    @include transporte;
     background-image: url("../assets/images/bus.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 15%;
 }
 
 /* galeria de hoteles */

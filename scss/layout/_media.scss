@@ -70,8 +70,7 @@
 /* media para banner sobre nosotros */
 @media (min-width: 1024px) {
     .sobre-nosotros {
-        background-size: 100%;
-        padding: 10%;
+        @include banner;
     }
 }
 
@@ -125,8 +124,7 @@
 /* media para banner destinos */
 @media (min-width: 1024px) {
     .destinos {
-        background-size: 100%;
-        padding: 10%;
+        @include banner;
     }
 }
 
@@ -165,8 +163,7 @@
 /* media para banner transportes */
 @media (min-width: 1024px) {
     .transportes {
-        background-size: 100%;
-        padding: 10%;
+        @include banner;
     }
 }
 

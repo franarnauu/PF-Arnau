@@ -1,11 +1,7 @@
 /* sobre nosotros banner */
 .sobre-nosotros {
-    color: $main-color;
+    @include banners;
     background-image: url("../assets/images/banner-sobre-nosotros.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-attachment: fixed;
-    padding: 20%;
 }
 
 /* nuestra historia */

@@ -1,0 +1,24 @@
+/* mixin para la seccion de transportes */
+@mixin transporte {
+    color: $main-color;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
+    padding: 15%;
+}
+
+/* mixin para los banners celular */
+@mixin banners {
+    color: $main-color;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
+    padding: 20%;
+}
+
+/* mixin para los banners desktop */
+@mixin banner {
+    background-size: 100%;
+    padding: 10%;
+}
