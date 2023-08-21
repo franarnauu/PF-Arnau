@@ -1,10 +1,10 @@
 /* sobre nosotros banner */
 .sobre-nosotros {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-sobre-nosotros.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    color: $main-color;
+    background-image: url("../assets/images/banner-sobre-nosotros.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 20%;
 }
 
@@ -15,39 +15,38 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
 
-.historia p {
-    text-align: center;
-    width: 100%;
-    margin: 5px 15px;
-}
+    p {
+        text-align: center;
+        width: 100%;
+        margin: 5px 15px;
+    }
 
+    /* imagenes del edificio */
+    img {
+        width: 80%;
+        border-radius: 30px;
+        margin-top: 20px;
+        transition: 0.5s;
+    }
 
-/* imagenes del edificio */
-.historia img {
-    width: 80%;
-    border-radius: 30px;
-    margin-top: 20px;
-    transition: 0.5s;
-}
-
-.historia img:hover {
-    width: 90%;
-    box-shadow: 5px 5px 40px 0px #191919;
+    img:hover {
+        width: 90%;
+        box-shadow: 5px 5px 40px 0px $dark-color;
+    }
 }
 
 /* seccion de beneficios */
 .beneficios-seccion {
     display: flex;
     flex-wrap: wrap;
-}
 
-.beneficios-seccion h2 {
-    text-align: center;
-    width: 100%;
-    margin: 50px;
-    font-size: x-large;
+    h2 {
+        text-align: center;
+        width: 100%;
+        margin: 50px;
+        font-size: x-large;
+    }
 }
 
 .beneficio {
@@ -55,14 +54,14 @@
     flex-direction: column;
     margin-bottom: 30px;
     text-align: center;
-}
 
-/* explicacion de los beneficios */
-.beneficio p {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    padding: 20px;
+    /* explicacion de los beneficios */
+    p {
+        text-align: center;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .beneficio-item {
@@ -70,17 +69,17 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-}
 
-/* imagenes representativas de los beneficios */
-.beneficio-item img {
-    width: 80%;
-    height: auto;
-    border-radius: 10%;
-    transition: 0.5s;
-}
+    /* imagenes representativas de los beneficios */
+    img {
+        width: 80%;
+        height: auto;
+        border-radius: 10%;
+        transition: 0.5s;
+    }
 
-.beneficio-item img:hover {
-    width: 90%;
-    box-shadow: 5px 5px 40px 0px #191919;
+    img:hover {
+        width: 90%;
+        box-shadow: 5px 5px 40px 0px $dark-color;
+    }
 }

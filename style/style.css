@@ -13,39 +13,6 @@ h2 {
   text-decoration: underline #E18903 4px;
 }
 
-/* boton wsp */
-.fixed-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 10;
-}
-
-/* funcion para que el boton siga el scroll */
-.fixed-button a {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: green;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 2px 5px black;
-  transition: 0.5s;
-}
-
-.fixed-button a img {
-  width: 40px;
-  height: 40px;
-  vertical-align: middle;
-  margin-left: 0;
-}
-
-/* Efecto al pasar mouse */
-.fixed-button a:hover {
-  background-color: darkgreen;
-}
-
 /* header */
 header {
   background-color: black;
@@ -84,13 +51,12 @@ nav {
   display: flex;
 }
 
-.logo a img {
-  width: 100%;
-}
-
 .logo {
   width: 25%;
   margin-left: 30px;
+}
+.logo a img {
+  width: 100%;
 }
 
 .sidebar {
@@ -107,7 +73,12 @@ nav {
 
 .footer-menu {
   display: flex;
-  background-color: #000000;
+  background-color: black;
+}
+.footer-menu div h3 {
+  padding: 25px 25px 0px 25px;
+  text-align: left;
+  color: #E18903;
 }
 
 /* lista del footer */
@@ -116,21 +87,13 @@ nav {
   padding: 15px 25px 25px 25px;
   text-align: left;
 }
-
 .footer-list li a {
   color: #E18903;
   text-align: left;
   display: inline-block;
 }
-
 .footer-list li a:hover {
   color: white;
-}
-
-.footer-menu div h3 {
-  padding: 25px 25px 0px 25px;
-  text-align: left;
-  color: #E18903;
 }
 
 /* iconos de redes sociales */
@@ -139,21 +102,48 @@ nav {
   text-align: center;
   padding: 10px;
 }
-
-/* imagenes de los iconos */
 .social-icon img {
   width: 60px;
   height: 60px;
   padding: 15px;
   transition: 0.5s;
 }
-
 .social-icon img:hover {
   width: 90px;
   height: 90px;
 }
 
 /* main */
+/* boton wsp */
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  /* funcion para que el boton siga el scroll */
+  /* Efecto al pasar mouse */
+}
+.fixed-button a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 2px 5px black;
+  transition: 0.5s;
+}
+.fixed-button a:hover {
+  background-color: darkgreen;
+}
+.fixed-button img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
 /* titulo */
 .inicio {
   color: #E18903;
@@ -165,7 +155,6 @@ nav {
   flex-wrap: wrap;
   padding: 15%;
 }
-
 .inicio div {
   display: flex;
   width: 100%;
@@ -188,9 +177,8 @@ h1 {
   align-items: center;
   width: 100%;
   height: auto;
+  /* eslogan */
 }
-
-/* eslogan */
 .eslogan p {
   color: black;
   font-size: 100%;
@@ -222,21 +210,20 @@ section h2 {
 .destinos-destacados {
   display: flex;
   flex-wrap: wrap;
+  /* nombre de las ciudades */
+  /* parrafos explicacion ciudades */
+  /* imagenes de los destinos */
 }
-
-/* nombre de las ciudades */
 .destinos-destacados h3 {
   padding: 5px 5px;
   margin: 15px 20px;
   border-radius: 30px;
   background-color: #E18903;
   width: 100%;
-  color: #000000;
+  color: black;
   text-align: center;
   justify-content: center;
 }
-
-/* parrafos explicacion ciudades */
 .destinos-destacados p {
   display: flex;
   justify-content: center;
@@ -244,15 +231,6 @@ section h2 {
   margin: 5px 15px;
   width: 100%;
 }
-
-.container-img {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-/* imagenes de los destinos */
 .destinos-destacados img {
   width: 70%;
   margin: 20px;
@@ -260,11 +238,17 @@ section h2 {
   border-radius: 30px;
   transition: 0.5s;
 }
-
 .destinos-destacados img:hover {
   width: 92%;
   height: auto;
   box-shadow: 5px 5px 30px 0px #191919;
+}
+
+.container-img {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /* banner de transportes */
@@ -285,15 +269,19 @@ section h2 {
 }
 
 /* titulo del transporte */
-.avion h3, .barco h3, .bus h3 {
+.avion h3,
+.barco h3,
+.bus h3 {
   font-weight: 600;
-  background-color: #000000;
+  background-color: black;
   border-radius: 30px;
   padding: 10px;
 }
 
 /* parrafos sobre los distintos transportes */
-.avion p, .barco p, .bus p {
+.avion p,
+.barco p,
+.bus p {
   display: inline-block;
   color: white;
   border-radius: 20px;
@@ -354,15 +342,13 @@ section h2 {
   overflow: hidden;
   transition: 0.5s;
   position: relative;
+  /* efecto para agrandar imagen y darle bordes */
 }
-
-/* efecto para agrandar imagen y darle bordes */
 .hotel:hover {
   transform: scale(1.1);
   border: 5px solid #E18903;
   z-index: 1;
 }
-
 .hotel img {
   width: 100%;
   height: auto;
@@ -391,7 +377,7 @@ section h2 {
 }
 
 .hotel-name {
-  color: #fff;
+  color: white;
   font-size: 16px;
   padding: 10px;
   text-align: center;
@@ -414,25 +400,22 @@ section h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* imagenes del edificio */
 }
-
 .historia p {
   text-align: center;
   width: 100%;
   margin: 5px 15px;
 }
-
-/* imagenes del edificio */
 .historia img {
   width: 80%;
   border-radius: 30px;
   margin-top: 20px;
   transition: 0.5s;
 }
-
 .historia img:hover {
   width: 90%;
-  box-shadow: 5px 5px 40px 0px #191919;
+  box-shadow: 5px 5px 40px 0px black;
 }
 
 /* seccion de beneficios */
@@ -440,7 +423,6 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
 }
-
 .beneficios-seccion h2 {
   text-align: center;
   width: 100%;
@@ -453,9 +435,8 @@ section h2 {
   flex-direction: column;
   margin-bottom: 30px;
   text-align: center;
+  /* explicacion de los beneficios */
 }
-
-/* explicacion de los beneficios */
 .beneficio p {
   text-align: center;
   display: flex;
@@ -468,19 +449,17 @@ section h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* imagenes representativas de los beneficios */
 }
-
-/* imagenes representativas de los beneficios */
 .beneficio-item img {
   width: 80%;
   height: auto;
   border-radius: 10%;
   transition: 0.5s;
 }
-
 .beneficio-item img:hover {
   width: 90%;
-  box-shadow: 5px 5px 40px 0px #191919;
+  box-shadow: 5px 5px 40px 0px black;
 }
 
 /* formulario main */
@@ -507,6 +486,10 @@ form {
   border: 1px solid #ccc;
   width: 90%;
   transition: 0.5s;
+  /* efecto al presionar la caja para escribir */
+}
+.field:focus {
+  border-color: #E18903;
 }
 
 label {
@@ -521,16 +504,10 @@ label {
   border: 2px outset #E18903;
   border-radius: 5px;
   transition: 0.5s;
+  /* efecto a los botones mouse fondo naranja */
 }
-
-/* efecto a los botones mouse fondo naranja */
 .botones:hover {
   background-color: #E18903;
-}
-
-/* efecto al presionar la caja para escribir */
-.field:focus {
-  border-color: #E18903;
 }
 
 /* media para el efecto de los nav links en desktop */

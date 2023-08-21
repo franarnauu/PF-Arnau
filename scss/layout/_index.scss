@@ -1,25 +1,57 @@
 /* main */
+/* boton wsp */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+
+    /* funcion para que el boton siga el scroll */
+    a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: green;
+        text-align: center;
+        line-height: 60px;
+        box-shadow: 0 2px 5px black;
+        transition: 0.5s;
+    }
+
+    /* Efecto al pasar mouse */
+    a:hover {
+        background-color: darkgreen;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-left: 0;
+    }
+}
 
 /* titulo */
 .inicio {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-inicio.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
+    color: $main-color;
+    background-image: url("../assets/images/banner-inicio.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     padding: 15%;
-}
 
-.inicio div {
-    display: flex;
-    width: 100%;
-    height: 20%;
+    div {
+        display: flex;
+        width: 100%;
+        height: 20%;
+    }
 }
 
 h1 {
-    background-color:black; 
+    background-color: $dark-color;
     border-radius: 30px;
     font-weight: 600;
     display: flex;
@@ -34,18 +66,18 @@ h1 {
     align-items: center;
     width: 100%;
     height: auto;
-}
 
-/* eslogan */
-.eslogan p {
-    color: black;
-    font-size: 100%;
-    text-align: center;
-    background-color:#E18903;
-    width: 100%;
-    border-radius: 30px;
-    padding: 10px 0px;
-    font-weight: 600;
+    /* eslogan */
+    p {
+        color: $dark-color;
+        font-size: 100%;
+        text-align: center;
+        background-color: $main-color;
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px 0px;
+        font-weight: 600;
+    }
 }
 
 /* titulos h2 subrayados */
@@ -57,38 +89,53 @@ section h2 {
 
 /* destinos banner */
 .destinos {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-destinos.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    color: $main-color;
+    background-image: url("../assets/images/banner-destinos.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 20%;
 }
 
 .destinos-destacados {
     display: flex;
     flex-wrap: wrap;
-}
 
-/* nombre de las ciudades */
-.destinos-destacados h3 {
-    padding: 5px 5px;
-    margin: 15px 20px;
-    border-radius: 30px;
-    background-color: #E18903;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    justify-content: center;
-}
+    /* nombre de las ciudades */
+    h3 {
+        padding: 5px 5px;
+        margin: 15px 20px;
+        border-radius: 30px;
+        background-color: $main-color;
+        width: 100%;
+        color: $dark-color;
+        text-align: center;
+        justify-content: center;
+    }
 
-/* parrafos explicacion ciudades */
-.destinos-destacados p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 5px 15px;
-    width: 100%;
+    /* parrafos explicacion ciudades */
+    p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 5px 15px;
+        width: 100%;
+    }
+
+    /* imagenes de los destinos */
+    img {
+        width: 70%;
+        margin: 20px;
+        height: auto;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    img:hover {
+        width: 92%;
+        height: auto;
+        box-shadow: 5px 5px 30px 0px #191919;
+    }
 }
 
 .container-img {
@@ -98,28 +145,13 @@ section h2 {
     justify-content: center;
 }
 
-/* imagenes de los destinos */
-.destinos-destacados img {
-    width: 70%;
-    margin: 20px;
-    height: auto;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.destinos-destacados img:hover {
-    width: 92%;
-    height: auto;
-    box-shadow: 5px 5px 30px 0px #191919;
-}
-
 /* banner de transportes */
 .transportes {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-transporte.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    color: $main-color;
+    background-image: url("../assets/images/banner-transporte.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 20%;
 }
 
@@ -131,17 +163,21 @@ section h2 {
 }
 
 /* titulo del transporte */
-.avion h3, .barco h3, .bus h3 {
+.avion h3,
+.barco h3,
+.bus h3 {
     font-weight: 600;
-    background-color: #000000;
+    background-color: $dark-color;
     border-radius: 30px;
     padding: 10px;
 }
 
 /* parrafos sobre los distintos transportes */
-.avion p , .barco p , .bus p {
+.avion p,
+.barco p,
+.bus p {
     display: inline-block;
-    color: white;
+    color: $light-color;
     border-radius: 20px;
     font-size: medium;
     padding: 10px;
@@ -150,34 +186,34 @@ section h2 {
 
 /* transporte avion */
 .avion {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/avion.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    color: $main-color;
+    text-align: center;
+    background-image: url("../assets/images/avion.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 15%;
 }
 
 /* transporte barco */
 .barco {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/barco.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    color: $main-color;
+    text-align: center;
+    background-image: url("../assets/images/barco.webp");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 15%;
 }
 
 /* transporte bus */
 .bus {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/bus.webp") ; 
+    color: $main-color;
+    text-align: center;
+    background-image: url("../assets/images/bus.webp");
     background-repeat: no-repeat;
-    background-size: 200%; 
-    background-attachment: fixed ; 
+    background-size: 200%;
+    background-attachment: fixed;
     padding: 15%;
 }
 
@@ -200,19 +236,19 @@ section h2 {
     overflow: hidden;
     transition: 0.5s;
     position: relative;
-}
 
-/* efecto para agrandar imagen y darle bordes */
-.hotel:hover {
-    transform: scale(1.1);
-    border: 5px solid #E18903;
-    z-index: 1;
-}
+    /* efecto para agrandar imagen y darle bordes */
+    &:hover {
+        transform: scale(1.1);
+        border: 5px solid $main-color;
+        z-index: 1;
+    }
 
-.hotel img {
-    width: 100%;
-    height: auto;
-    justify-content: center;
+    img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
 }
 
 .hotel-overlay {
@@ -237,7 +273,7 @@ section h2 {
 }
 
 .hotel-name {
-    color: #fff;
+    color: $light-color;
     font-size: 16px;
     padding: 10px;
     text-align: center;

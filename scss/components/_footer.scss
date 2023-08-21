@@ -8,7 +8,13 @@
 
 .footer-menu {
     display: flex;
-    background-color: #000000;
+    background-color: $dark-color;
+
+    div h3 {
+        padding: 25px 25px 0px 25px;
+        text-align: left;
+        color: $main-color;
+    }
 }
 
 /* lista del footer */
@@ -16,40 +22,33 @@
     list-style-type: none;
     padding: 15px 25px 25px 25px;
     text-align: left;
-}
 
-.footer-list li a {
-    color: #E18903;
-    text-align: left;
-    display: inline-block;
-}
+    li a {
+        color: $main-color;
+        text-align: left;
+        display: inline-block;
+    }
 
-.footer-list li a:hover {
-    color: white;
-}
-
-.footer-menu div h3 {
-    padding: 25px 25px 0px 25px;
-    text-align: left;
-    color: #E18903;
+    li a:hover {
+        color: $light-color;
+    }
 }
 
 /* iconos de redes sociales */
 .social-icon {
-    display:inline;
+    display: inline;
     text-align: center;
     padding: 10px;
-}
 
-/* imagenes de los iconos */
-.social-icon img {
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    transition: 0.5s;
-}
+    img {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        transition: 0.5s;
+    }
 
-.social-icon img:hover {
-    width: 90px;
-    height: 90px;
+    img:hover {
+        width: 90px;
+        height: 90px;
+    }
 }
