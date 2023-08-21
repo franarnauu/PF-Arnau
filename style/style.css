@@ -1,737 +1,721 @@
+/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-/* header */
-
-header {
-    background-color: black;
+a {
+  text-decoration: none;
 }
 
-.navbar-brand {
-    color: #ffff;
-    font-weight: 700;
-    display:none;
+h2 {
+  text-decoration: underline #E18903 4px;
 }
-
-/* cambiar color borde menu hamburguesa */
-.custom-toggler.navbar-toggler {
-    border: 2px solid #E18903;
-} 
-
-/* cambiar color icono menu hamburguesa */
-.custom-toggler.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225,137,3, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} 
-
-nav {
-    width: 100%;
-    display: flex;
-}
-
-.nav-link {
-    color: #E18903;
-    text-align: center;
-    transition: 0.5s;
-}
-
-/* media para el efecto de los nav links en desktop */
-@media (min-width: 1024px) {
-    .nav-link:hover {
-        color: black;
-        background-color: #E18903;
-        font-weight: 700;
-        padding: 5px 10px;
-        border-radius: 10px;
-}
-}
-
-.container-fluid {
-    width: 25%;
-    margin: 0px 0px;
-    display: flex;
-}
-
-.logo a img {
-    width: 100%;
-}
-
-.logo {
-    width: 25%;
-    margin-left: 30px;
-}
-
-
-.sidebar {
-    background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur (50px);
-}
-
-/* media para el header */
-@media (min-width: 1024px) {
-    .logo a img {
-        width: 20%;
-    }
-    .container-fluid {
-        width: 75%;
-    }
-    .navbar {
-        padding: 20px;
-    }
-    .nav-link {
-        margin: 0px 10px;
-        font-size: large;
-    }
-}
-
-
-/* main */
 
 /* boton wsp */
 .fixed-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
 }
 
 /* funcion para que el boton siga el scroll */
 .fixed-button a {
-    display: inline-block;
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%;
-    background-color: green; 
-    text-align: center;
-    line-height: 60px; 
-    text-decoration: none;
-    box-shadow: 0 2px 5px black; 
-    transition: 0.5s;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 2px 5px black;
+  transition: 0.5s;
 }
+
 .fixed-button a img {
-    width: 40px;
-    height: 40px; 
-    vertical-align: middle;
-    margin-left: 0;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 0;
 }
 
 /* Efecto al pasar mouse */
 .fixed-button a:hover {
-    background-color: darkgreen;
+  background-color: darkgreen;
 }
 
-/* titulo */
-.inicio {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-inicio.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15%;
+/* header */
+header {
+  background-color: black;
 }
 
-.inicio div {
-    display: flex;
-    width: 100%;
-    height: 20%;
+.navbar-brand {
+  color: white;
+  font-weight: 700;
+  display: none;
 }
 
-h1 {
-    background-color:black; 
-    border-radius: 30px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 5px;
+/* cambiar color borde menu hamburguesa */
+.custom-toggler.navbar-toggler {
+  border: 2px solid #E18903;
 }
 
-/* posicion del eslogan */
-.eslogan {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
+/* cambiar color icono menu hamburguesa */
+.custom-toggler.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225,137,3, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* eslogan */
-.eslogan p {
-    color: black;
-    font-size: 100%;
-    text-align: center;
-    background-color:#E18903;
-    width: 100%;
-    border-radius: 30px;
-    padding: 10px 0px;
-    font-weight: 600;
+nav {
+  width: 100%;
+  display: flex;
 }
 
-/* media para el banner de inicio */
-@media (min-width: 1024px) {
-    .inicio {
-        background-size: 100%;
-        flex-wrap: wrap;
-        background-position-y: -150px;
-    }
-    h1 {
-        font-size: 400%;
-        width: 100%;
-        padding: 40px 20px;
-        align-items: center;
-    }
-    .eslogan {
-        margin-top: 120px;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
-    .eslogan p {
-        width: 70%;
-        border-radius: 30px;
-        padding: 10px 0px;
-        font-weight: 600;
-        font-size: larger;
-    }
+.nav-link {
+  color: #E18903;
+  text-align: center;
+  transition: 0.5s;
 }
 
-/* titulos h2 subrayados */
-section h2 {
-    text-align: center;
-    text-decoration: underline #E18903 4px;
-    margin: 30px;
-    font-size: x-large;
+.container-fluid {
+  width: 25%;
+  margin: 0px 0px;
+  display: flex;
 }
 
-/* media para los titulos h2 en desktop */
-@media (min-width: 1024px) {
-    section h2 {
-        font-size: xx-large;
-    }
+.logo a img {
+  width: 100%;
 }
 
-/* sobre nosotros banner */
-.sobre-nosotros {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-sobre-nosotros.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 20%;
+.logo {
+  width: 25%;
+  margin-left: 30px;
 }
 
-/* media para banner sobre nosotros */
-@media (min-width: 1024px) {
-    .sobre-nosotros {
-        background-size: 100%; 
-        padding: 10%;
-    }
-}
-
-/* nuestra historia */
-.historia {
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.historia p {
-    text-align: center;
-    width: 100%;
-    margin: 5px 15px;
-}
-
-
-/* imagenes del edificio */
-.historia img {
-    width: 80%;
-    border-radius: 30px;
-    margin-top: 20px;
-    transition: 0.5s;
-}
-
-.historia img:hover {
-    width: 90%;
-    box-shadow: 5px 5px 40px 0px #191919;
-}
-
-/* seccion de beneficios */
-.beneficios-seccion {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.beneficios-seccion h2 {
-    text-align: center;
-    width: 100%;
-    text-decoration: underline #E18903 4px;
-    margin: 50px;
-    font-size: x-large;
-}
-
-.beneficio {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-/* explicacion de los beneficios */
-.beneficio p {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    padding: 20px;
-}
-
-.beneficio-item {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* imagenes representativas de los beneficios */
-.beneficio-item img {
-    width: 80%;
-    height: auto;
-    border-radius: 10%;
-    transition: 0.5s;
-}
-
-.beneficio-item img:hover {
-    width: 90%;
-    box-shadow: 5px 5px 40px 0px #191919;
-}
-
-/* media para la pagina sobre nosotros */
-@media (min-width: 1024px) {
-    .beneficios-seccion h2 {
-        font-size: xx-large;
-    }
-    .historia p {
-        width: 30%;
-        margin-right: 5%;
-}
-    .historia img {
-        width: 30%;
-        height: 30%;
-}
-    .historia img:hover {
-        width: 32%;
-        height: 32%;
-}
-    .beneficios-seccion {
-        margin-top: 50px;
-        margin-bottom: 50px;
-}
-    .beneficio {
-        flex-direction: row;
-        width: 100%;
-}
-    .beneficio p {
-        font-size: large;
-        width: 100%;
-}
-    .beneficio-item img {
-        width: 80%;
-        height: auto;
-}
-    .beneficio-item img:hover {
-        width: 82%;
-        height: auto;
-}
-}
-
-
-
-/* destinos banner */
-.destinos {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-destinos.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 20%;
-}
-
-/* media para banner destinos */
-@media (min-width: 1024px) {
-    .destinos {
-        background-size: 100%; 
-        padding: 10%;
-    }
-}
-
-.destinos-destacados {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* nombre de las ciudades */
-.destinos-destacados h3 {
-    padding: 5px 5px;
-    margin: 15px 20px;
-    border-radius: 30px;
-    background-color: #E18903;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    justify-content: center;
-}
-
-/* parrafos explicacion ciudades */
-.destinos-destacados p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 5px 15px;
-    width: 100%;
-}
-
-.container-img {
-    width: 100%;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-/* imagenes de los destinos */
-.destinos-destacados img {
-    width: 70%;
-    margin: 20px;
-    height: auto;
-    border-radius: 30px;
-    transition: 0.5s;
-}
-
-.destinos-destacados img:hover {
-    width: 92%;
-    height: auto;
-    box-shadow: 5px 5px 30px 0px #191919;
-}
-
-/* media para seccion destinos destacados */
-@media (min-width: 1024px) {
-    .destinos-destacados {
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 30px 0px;
-    }
-    .destinos-destacados h3 {
-        width: 20%;
-        height: fit-content;
-    }
-    .destinos-destacados p {
-        text-align: left;
-        width: 25%;
-    }
-    .container-img {
-        width: 30%;
-    }
-    
-    .destinos-destacados img {
-        width: 100%;
-        height: auto;
-    }
-    .destinos-destacados img:hover {
-        width: 105%
-    }
-}
-
-/* banner de transportes */
-.transportes {
-    color: #E18903; 
-    background-image:url("../assets/images/banner-transporte.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 20%;
-}
-
-/* media para banner transportes */
-@media (min-width: 1024px) {
-    .transportes {
-        background-size: 100%; 
-        padding: 10%;
-    }
-}
-
-/* subtitulo del h2 de transporte */
-.subtitulos {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-/* titulo del transporte */
-.avion h3, .barco h3, .bus h3 {
-    font-weight: 600;
-    background-color: #000000;
-    border-radius: 30px;
-    padding: 10px;
-}
-
-/* parrafos sobre los distintos transportes */
-.avion p , .barco p , .bus p {
-    display: inline-block;
-    color: white;
-    border-radius: 20px;
-    font-size: medium;
-    padding: 10px;
-    font-weight: 100;
-}
-
-/* transporte avion */
-.avion {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/avion.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 15%;
-}
-
-/* transporte barco */
-.barco {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/barco.webp") ; 
-    background-repeat: no-repeat; 
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 15%;
-}
-
-/* transporte bus */
-.bus {
-    color: #E18903; 
-    text-align: center; 
-    background-image:url("../assets/images/bus.webp") ; 
-    background-repeat: no-repeat;
-    background-size: 200%; 
-    background-attachment: fixed ; 
-    padding: 15%;
-}
-
-/* media para seccion de transportes */
-@media (min-width: 1024px) {
-    .avion {
-        background-image:url("../assets/images/avion-desktop.webp") ; 
-        background-size: 150%; 
-    }
-    .barco {
-        background-image:url("../assets/images/barco-desktop.webp") ; 
-        background-size: 150%; 
-    }
-    .bus {
-        background-image:url("../assets/images/bus-desktop.webp") ; 
-        background-size: 150%; 
-    }
-}
-
-/* galeria de hoteles */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 30px;
-    padding: 30px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.hotel {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: 0.5s;
-    position: relative;
-}
-
-/* efecto para agrandar imagen y darle bordes */
-.hotel:hover {
-    transform: scale(1.1);
-    border: 5px solid #E18903;
-    z-index: 1;
-}
-
-.hotel img {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-.hotel-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
-}
-
-/* efecto para que la imagen se ponga mas opaca al pasar mouse */
-.hotel:hover .hotel-overlay {
-    opacity: 1;
-}
-
-.hotel-name {
-    color: #fff;
-    font-size: 16px;
-    padding: 10px;
-    text-align: center;
-}
-
-/* formulario main */
-form {
-    background-color: white;
-    padding: 20px;
-    color: black;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-    width: 90%;
-    border: 2px solid black;
-}
-
-/* fondo del formulario */
-.form {
-    background-image: url("../assets/images/background-form.webp");
-    padding: 30px;
-}
-
-.field {
-    outline: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 90%;
-    transition: 0.5s;
-}
-
-label {
-    display: block;
-    padding: 10px;
-}
-
-.botones {
-    width: 90%;
-    padding: 5px;
-    margin: 5px;
-    border: 2px outset #E18903;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-/* efecto a los botones mouse fondo naranja */
-.botones:hover {
-    background-color: #E18903;
-}
-
-/* efecto al presionar la caja para escribir */
-.field:focus {
-    border-color: #E18903;
-}
-
-/* media para pagina de contacto */
-@media (min-width: 1024px) {
-    form {
-        padding: 30px;
-        margin: 0 auto;
-        width: 500px;
-    }
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur 50px;
 }
 
 /* footer */
-
 /* iframe de maps */
 .mapa {
-    width: 100%;
-    height: 50%;
-}
-
-/* media para mapa de google maps */
-@media (min-width: 1024px) {
-    .mapa {
-        height: 350px;
-    }
+  width: 100%;
+  height: 50%;
 }
 
 .footer-menu {
-    display: flex;
-    background-color: #000000;
+  display: flex;
+  background-color: #000000;
 }
 
 /* lista del footer */
 .footer-list {
-    list-style-type: none;
-    padding: 15px 25px 25px 25px;
-    text-align: left;
+  list-style-type: none;
+  padding: 15px 25px 25px 25px;
+  text-align: left;
 }
 
 .footer-list li a {
-    text-decoration: none;
-    color: #E18903;
-    text-align: left;
-    display: inline-block;
+  color: #E18903;
+  text-align: left;
+  display: inline-block;
 }
 
 .footer-list li a:hover {
-    color: white;
+  color: white;
 }
 
 .footer-menu div h3 {
-    padding: 25px 25px 0px 25px;
-    text-align: left;
-    color: #E18903;
+  padding: 25px 25px 0px 25px;
+  text-align: left;
+  color: #E18903;
 }
 
 /* iconos de redes sociales */
 .social-icon {
-    display:inline;
-    text-align: center;
-    padding: 10px;
+  display: inline;
+  text-align: center;
+  padding: 10px;
 }
 
 /* imagenes de los iconos */
 .social-icon img {
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    transition: 0.5s;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  transition: 0.5s;
 }
 
 .social-icon img:hover {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
+/* main */
+/* titulo */
+.inicio {
+  color: #E18903;
+  background-image: url("../assets/images/banner-inicio.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15%;
+}
+
+.inicio div {
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+h1 {
+  background-color: black;
+  border-radius: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* posicion del eslogan */
+.eslogan {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* eslogan */
+.eslogan p {
+  color: black;
+  font-size: 100%;
+  text-align: center;
+  background-color: #E18903;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px 0px;
+  font-weight: 600;
+}
+
+/* titulos h2 subrayados */
+section h2 {
+  text-align: center;
+  margin: 30px;
+  font-size: x-large;
+}
+
+/* destinos banner */
+.destinos {
+  color: #E18903;
+  background-image: url("../assets/images/banner-destinos.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 20%;
+}
+
+.destinos-destacados {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* nombre de las ciudades */
+.destinos-destacados h3 {
+  padding: 5px 5px;
+  margin: 15px 20px;
+  border-radius: 30px;
+  background-color: #E18903;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+}
+
+/* parrafos explicacion ciudades */
+.destinos-destacados p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 15px;
+  width: 100%;
+}
+
+.container-img {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* imagenes de los destinos */
+.destinos-destacados img {
+  width: 70%;
+  margin: 20px;
+  height: auto;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.destinos-destacados img:hover {
+  width: 92%;
+  height: auto;
+  box-shadow: 5px 5px 30px 0px #191919;
+}
+
+/* banner de transportes */
+.transportes {
+  color: #E18903;
+  background-image: url("../assets/images/banner-transporte.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 20%;
+}
+
+/* subtitulo del h2 de transporte */
+.subtitulos {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* titulo del transporte */
+.avion h3, .barco h3, .bus h3 {
+  font-weight: 600;
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/* parrafos sobre los distintos transportes */
+.avion p, .barco p, .bus p {
+  display: inline-block;
+  color: white;
+  border-radius: 20px;
+  font-size: medium;
+  padding: 10px;
+  font-weight: 100;
+}
+
+/* transporte avion */
+.avion {
+  color: #E18903;
+  text-align: center;
+  background-image: url("../assets/images/avion.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 15%;
+}
+
+/* transporte barco */
+.barco {
+  color: #E18903;
+  text-align: center;
+  background-image: url("../assets/images/barco.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 15%;
+}
+
+/* transporte bus */
+.bus {
+  color: #E18903;
+  text-align: center;
+  background-image: url("../assets/images/bus.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 15%;
+}
+
+/* galeria de hoteles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.hotel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+}
+
+/* efecto para agrandar imagen y darle bordes */
+.hotel:hover {
+  transform: scale(1.1);
+  border: 5px solid #E18903;
+  z-index: 1;
+}
+
+.hotel img {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.hotel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+/* efecto para que la imagen se ponga mas opaca al pasar mouse */
+.hotel:hover .hotel-overlay {
+  opacity: 1;
+}
+
+.hotel-name {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* sobre nosotros banner */
+.sobre-nosotros {
+  color: #E18903;
+  background-image: url("../assets/images/banner-sobre-nosotros.webp");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-attachment: fixed;
+  padding: 20%;
+}
+
+/* nuestra historia */
+.historia {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.historia p {
+  text-align: center;
+  width: 100%;
+  margin: 5px 15px;
+}
+
+/* imagenes del edificio */
+.historia img {
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.historia img:hover {
+  width: 90%;
+  box-shadow: 5px 5px 40px 0px #191919;
+}
+
+/* seccion de beneficios */
+.beneficios-seccion {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beneficios-seccion h2 {
+  text-align: center;
+  width: 100%;
+  margin: 50px;
+  font-size: x-large;
+}
+
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* explicacion de los beneficios */
+.beneficio p {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.beneficio-item {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* imagenes representativas de los beneficios */
+.beneficio-item img {
+  width: 80%;
+  height: auto;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.beneficio-item img:hover {
+  width: 90%;
+  box-shadow: 5px 5px 40px 0px #191919;
+}
+
+/* formulario main */
+form {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  border: 2px solid black;
+}
+
+/* fondo del formulario */
+.form {
+  background-image: url("../assets/images/background-form.webp");
+  padding: 30px;
+}
+
+.field {
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 90%;
+  transition: 0.5s;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+.botones {
+  width: 90%;
+  padding: 5px;
+  margin: 5px;
+  border: 2px outset #E18903;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* efecto a los botones mouse fondo naranja */
+.botones:hover {
+  background-color: #E18903;
+}
+
+/* efecto al presionar la caja para escribir */
+.field:focus {
+  border-color: #E18903;
+}
+
+/* media para el efecto de los nav links en desktop */
+@media (min-width: 1024px) {
+  .nav-link:hover {
+    color: black;
+    background-color: #E18903;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+}
+/* media para el header */
+@media (min-width: 1024px) {
+  .logo a img {
+    width: 20%;
+  }
+  .container-fluid {
+    width: 75%;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .nav-link {
+    margin: 0px 10px;
+    font-size: large;
+  }
+}
+/* media para el banner de inicio */
+@media (min-width: 1024px) {
+  .inicio {
+    background-size: 100%;
+    flex-wrap: wrap;
+    background-position-y: -150px;
+  }
+  h1 {
+    font-size: 400%;
+    width: 100%;
+    padding: 40px 20px;
+    align-items: center;
+  }
+  .eslogan {
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .eslogan p {
+    width: 70%;
+    border-radius: 30px;
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: larger;
+  }
+}
+/* media para los titulos h2 en desktop */
+@media (min-width: 1024px) {
+  section h2 {
+    font-size: xx-large;
+  }
+}
+/* media para banner sobre nosotros */
+@media (min-width: 1024px) {
+  .sobre-nosotros {
+    background-size: 100%;
+    padding: 10%;
+  }
+}
+/* media para la pagina sobre nosotros */
+@media (min-width: 1024px) {
+  .beneficios-seccion h2 {
+    font-size: xx-large;
+  }
+  .historia p {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .historia img {
+    width: 30%;
+    height: 30%;
+  }
+  .historia img:hover {
+    width: 32%;
+    height: 32%;
+  }
+  .beneficios-seccion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .beneficio {
+    flex-direction: row;
+    width: 100%;
+  }
+  .beneficio p {
+    font-size: large;
+    width: 100%;
+  }
+  .beneficio-item img {
+    width: 80%;
+    height: auto;
+  }
+  .beneficio-item img:hover {
+    width: 82%;
+    height: auto;
+  }
+}
+/* media para banner destinos */
+@media (min-width: 1024px) {
+  .destinos {
+    background-size: 100%;
+    padding: 10%;
+  }
+}
+/* media para seccion destinos destacados */
+@media (min-width: 1024px) {
+  .destinos-destacados {
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+  }
+  .destinos-destacados h3 {
+    width: 20%;
+    height: fit-content;
+  }
+  .destinos-destacados p {
+    text-align: left;
+    width: 25%;
+  }
+  .container-img {
+    width: 30%;
+  }
+  .destinos-destacados img {
+    width: 100%;
+    height: auto;
+  }
+  .destinos-destacados img:hover {
+    width: 105%;
+  }
+}
+/* media para banner transportes */
+@media (min-width: 1024px) {
+  .transportes {
+    background-size: 100%;
+    padding: 10%;
+  }
+}
+/* media para seccion de transportes */
+@media (min-width: 1024px) {
+  .avion {
+    background-image: url("../assets/images/avion-desktop.webp");
+    background-size: 150%;
+  }
+  .barco {
+    background-image: url("../assets/images/barco-desktop.webp");
+    background-size: 150%;
+  }
+  .bus {
+    background-image: url("../assets/images/bus-desktop.webp");
+    background-size: 150%;
+  }
+}
+/* media para pagina de contacto */
+@media (min-width: 1024px) {
+  form {
+    padding: 30px;
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+/* media para mapa de google maps */
+@media (min-width: 1024px) {
+  .mapa {
+    height: 350px;
+  }
+}
 /* media para los social icon */
 @media (min-width: 1024px) {
-    .social-icon img {
-        width: 100px;
-        height: auto;
-    }
-    
-    .social-icon img:hover {
-        width: 110px;
-        height: auto;
-    }
+  .social-icon img {
+    width: 100px;
+    height: auto;
+  }
+  .social-icon img:hover {
+    width: 110px;
+    height: auto;
+  }
 }
 
-
+/*# sourceMappingURL=style.css.map */

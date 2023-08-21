@@ -1,0 +1,52 @@
+/* header */
+
+header {
+    background-color: black;
+}
+
+.navbar-brand {
+    color: #ffff;
+    font-weight: 700;
+    display:none;
+}
+
+/* cambiar color borde menu hamburguesa */
+.custom-toggler.navbar-toggler {
+    border: 2px solid #E18903;
+} 
+
+/* cambiar color icono menu hamburguesa */
+.custom-toggler.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225,137,3, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.nav-link {
+    color: #E18903;
+    text-align: center;
+    transition: 0.5s;
+}
+.container-fluid {
+    width: 25%;
+    margin: 0px 0px;
+    display: flex;
+}
+
+.logo a img {
+    width: 100%;
+}
+
+.logo {
+    width: 25%;
+    margin-left: 30px;
+}
+
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur (50px);
+}

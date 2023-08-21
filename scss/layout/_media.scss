@@ -1,0 +1,198 @@
+/* media para el efecto de los nav links en desktop */
+@media (min-width: 1024px) {
+    .nav-link:hover {
+        color: black;
+        background-color: #E18903;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 10px;
+}
+}
+
+/* media para el header */
+@media (min-width: 1024px) {
+    .logo a img {
+        width: 20%;
+    }
+    .container-fluid {
+        width: 75%;
+    }
+    .navbar {
+        padding: 20px;
+    }
+    .nav-link {
+        margin: 0px 10px;
+        font-size: large;
+    }
+}
+
+/* media para el banner de inicio */
+@media (min-width: 1024px) {
+    .inicio {
+        background-size: 100%;
+        flex-wrap: wrap;
+        background-position-y: -150px;
+    }
+    h1 {
+        font-size: 400%;
+        width: 100%;
+        padding: 40px 20px;
+        align-items: center;
+    }
+    .eslogan {
+        margin-top: 120px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .eslogan p {
+        width: 70%;
+        border-radius: 30px;
+        padding: 10px 0px;
+        font-weight: 600;
+        font-size: larger;
+    }
+}
+
+/* media para los titulos h2 en desktop */
+@media (min-width: 1024px) {
+    section h2 {
+        font-size: xx-large;
+    }
+}
+
+/* media para banner sobre nosotros */
+@media (min-width: 1024px) {
+    .sobre-nosotros {
+        background-size: 100%; 
+        padding: 10%;
+    }
+}
+
+/* media para la pagina sobre nosotros */
+@media (min-width: 1024px) {
+    .beneficios-seccion h2 {
+        font-size: xx-large;
+    }
+    .historia p {
+        width: 30%;
+        margin-right: 5%;
+}
+    .historia img {
+        width: 30%;
+        height: 30%;
+}
+    .historia img:hover {
+        width: 32%;
+        height: 32%;
+}
+    .beneficios-seccion {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+    .beneficio {
+        flex-direction: row;
+        width: 100%;
+}
+    .beneficio p {
+        font-size: large;
+        width: 100%;
+}
+    .beneficio-item img {
+        width: 80%;
+        height: auto;
+}
+    .beneficio-item img:hover {
+        width: 82%;
+        height: auto;
+}
+}
+
+/* media para banner destinos */
+@media (min-width: 1024px) {
+    .destinos {
+        background-size: 100%; 
+        padding: 10%;
+    }
+}
+
+/* media para seccion destinos destacados */
+@media (min-width: 1024px) {
+    .destinos-destacados {
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+    .destinos-destacados h3 {
+        width: 20%;
+        height: fit-content;
+    }
+    .destinos-destacados p {
+        text-align: left;
+        width: 25%;
+    }
+    .container-img {
+        width: 30%;
+    }
+    
+    .destinos-destacados img {
+        width: 100%;
+        height: auto;
+    }
+    .destinos-destacados img:hover {
+        width: 105%
+    }
+}
+
+/* media para banner transportes */
+@media (min-width: 1024px) {
+    .transportes {
+        background-size: 100%; 
+        padding: 10%;
+    }
+}
+
+/* media para seccion de transportes */
+@media (min-width: 1024px) {
+    .avion {
+        background-image:url("../assets/images/avion-desktop.webp") ; 
+        background-size: 150%; 
+    }
+    .barco {
+        background-image:url("../assets/images/barco-desktop.webp") ; 
+        background-size: 150%; 
+    }
+    .bus {
+        background-image:url("../assets/images/bus-desktop.webp") ; 
+        background-size: 150%; 
+    }
+}
+
+/* media para pagina de contacto */
+@media (min-width: 1024px) {
+    form {
+        padding: 30px;
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+
+/* media para mapa de google maps */
+@media (min-width: 1024px) {
+    .mapa {
+        height: 350px;
+    }
+}
+
+/* media para los social icon */
+@media (min-width: 1024px) {
+    .social-icon img {
+        width: 100px;
+        height: auto;
+    }
+    
+    .social-icon img:hover {
+        width: 110px;
+        height: auto;
+    }
+}

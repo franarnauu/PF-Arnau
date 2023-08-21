@@ -1,0 +1,31 @@
+/* boton wsp */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* funcion para que el boton siga el scroll */
+.fixed-button a {
+    display: inline-block;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    background-color: green; 
+    text-align: center;
+    line-height: 60px; 
+    box-shadow: 0 2px 5px black; 
+    transition: 0.5s;
+}
+.fixed-button a img {
+    width: 40px;
+    height: 40px; 
+    vertical-align: middle;
+    margin-left: 0;
+}
+
+/* Efecto al pasar mouse */
+.fixed-button a:hover {
+    background-color: darkgreen;
+}
