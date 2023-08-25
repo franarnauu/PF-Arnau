@@ -52,7 +52,7 @@
 
 h1 {
     background-color: $dark-color;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ h1 {
         text-align: center;
         background-color: $main-color;
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
         padding: 10px 0px;
         font-weight: 600;
     }
@@ -83,7 +83,7 @@ h1 {
 /* titulos h2 subrayados */
 section h2 {
     text-align: center;
-    margin: 30px;
+    margin: 30px 30px 20px 30px;
     font-size: x-large;
 }
 
@@ -95,13 +95,13 @@ section h2 {
 
 .destinos-destacados {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     /* nombre de las ciudades */
     h3 {
-        padding: 5px 5px;
-        margin: 15px 20px;
-        border-radius: 30px;
+        padding: 10px;
+        border-radius: 20px;
         background-color: $main-color;
         width: 100%;
         color: $dark-color;
@@ -113,8 +113,9 @@ section h2 {
     p {
         display: flex;
         justify-content: center;
+        padding: 10px;
+        margin-bottom: 0;
         text-align: center;
-        margin: 5px 15px;
         width: 100%;
     }
 
@@ -123,15 +124,17 @@ section h2 {
         width: 70%;
         margin: 20px;
         height: auto;
-        border-radius: 30px;
+        border-radius: 20px;
         transition: 0.5s;
     }
 
     img:hover {
-        width: 92%;
-        height: auto;
-        box-shadow: 5px 5px 30px 0px #191919;
+        @include shadow
     }
+}
+
+.destino-content {
+    width: 90%
 }
 
 .container-img {
@@ -159,8 +162,7 @@ section h2 {
 .barco h3,
 .bus h3 {
     font-weight: 600;
-    background-color: $dark-color;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px;
 }
 
@@ -209,7 +211,7 @@ section h2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
     position: relative;

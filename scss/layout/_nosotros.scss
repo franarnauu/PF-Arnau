@@ -21,14 +21,13 @@
     /* imagenes del edificio */
     img {
         width: 80%;
-        border-radius: 30px;
+        border-radius: 20px;
         margin-top: 20px;
         transition: 0.5s;
     }
 
     img:hover {
-        width: 90%;
-        box-shadow: 5px 5px 40px 0px $dark-color;
+        @include shadow
     }
 }
 
@@ -57,25 +56,29 @@
         display: flex;
         width: 100%;
         padding: 20px;
+        margin-bottom: 0;
     }
 }
 
 .beneficio-item {
-    width: 100%;
+    width: 95%;
+    margin: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 2px solid $main-color;
+    border-radius: 20px;
+    transition: 0.5s;
 
     /* imagenes representativas de los beneficios */
     img {
-        width: 80%;
+        width: 100%;
         height: auto;
-        border-radius: 10%;
+        border-radius: 20px 20px 0px 0px;
         transition: 0.5s;
     }
 
-    img:hover {
-        width: 90%;
-        box-shadow: 5px 5px 40px 0px $dark-color;
+    &:hover {
+        @include shadow
     }
 }

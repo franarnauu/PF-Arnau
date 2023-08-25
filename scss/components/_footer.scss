@@ -6,8 +6,13 @@
     height: 50%;
 }
 
+.menu-container {
+    width: 50%;
+}
+
 .footer-menu {
     display: flex;
+    flex-wrap: wrap;
     background-color: $dark-color;
 
     div h3 {
@@ -20,12 +25,15 @@
 /* lista del footer */
 .footer-list {
     list-style-type: none;
-    padding: 15px 25px 25px 25px;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0px 25px 25px;
     text-align: left;
 
     li a {
         color: $main-color;
         text-align: left;
+        font-size: large;
         display: inline-block;
     }
 
@@ -34,16 +42,21 @@
     }
 }
 
+.social-container{
+    width: 50%;
+}
+
 /* iconos de redes sociales */
 .social-icon {
     display: inline;
+    width: 50%;
     text-align: center;
-    padding: 10px;
 
     img {
-        width: 60px;
-        height: 60px;
-        padding: 15px;
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+        margin: 4px;
         transition: 0.5s;
     }
 
@@ -52,3 +65,18 @@
         height: 90px;
     }
 }
+
+/* Estilos para la sección de copyright */
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+
+    p {
+    color: $main-color;
+    font-size: small;
+    margin: 0;
+}
+}
+
+

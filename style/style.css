@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 * {
   margin: 0;
@@ -16,6 +17,7 @@ h2 {
 /* mixin para la seccion de transportes */
 /* mixin para los banners celular */
 /* mixin para los banners desktop */
+/* mixin para las sombras */
 /* header */
 header {
   background-color: black;
@@ -74,8 +76,13 @@ nav {
   height: 50%;
 }
 
+.menu-container {
+  width: 50%;
+}
+
 .footer-menu {
   display: flex;
+  flex-wrap: wrap;
   background-color: black;
 }
 .footer-menu div h3 {
@@ -87,33 +94,53 @@ nav {
 /* lista del footer */
 .footer-list {
   list-style-type: none;
-  padding: 15px 25px 25px 25px;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0px 25px 25px;
   text-align: left;
 }
 .footer-list li a {
   color: #E18903;
   text-align: left;
+  font-size: large;
   display: inline-block;
 }
 .footer-list li a:hover {
   color: white;
 }
 
+.social-container {
+  width: 50%;
+}
+
 /* iconos de redes sociales */
 .social-icon {
   display: inline;
+  width: 50%;
   text-align: center;
-  padding: 10px;
 }
 .social-icon img {
-  width: 60px;
-  height: 60px;
-  padding: 15px;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin: 4px;
   transition: 0.5s;
 }
 .social-icon img:hover {
   width: 90px;
   height: 90px;
+}
+
+/* Estilos para la sección de copyright */
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.copyright p {
+  color: #E18903;
+  font-size: small;
+  margin: 0;
 }
 
 /* main */
@@ -166,7 +193,7 @@ nav {
 
 h1 {
   background-color: black;
-  border-radius: 30px;
+  border-radius: 20px;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -188,7 +215,7 @@ h1 {
   text-align: center;
   background-color: #E18903;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px 0px;
   font-weight: 600;
 }
@@ -196,7 +223,7 @@ h1 {
 /* titulos h2 subrayados */
 section h2 {
   text-align: center;
-  margin: 30px;
+  margin: 30px 30px 20px 30px;
   font-size: x-large;
 }
 
@@ -212,15 +239,15 @@ section h2 {
 
 .destinos-destacados {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   /* nombre de las ciudades */
   /* parrafos explicacion ciudades */
   /* imagenes de los destinos */
 }
 .destinos-destacados h3 {
-  padding: 5px 5px;
-  margin: 15px 20px;
-  border-radius: 30px;
+  padding: 10px;
+  border-radius: 20px;
   background-color: #E18903;
   width: 100%;
   color: black;
@@ -230,21 +257,25 @@ section h2 {
 .destinos-destacados p {
   display: flex;
   justify-content: center;
+  padding: 10px;
+  margin-bottom: 0;
   text-align: center;
-  margin: 5px 15px;
   width: 100%;
 }
 .destinos-destacados img {
   width: 70%;
   margin: 20px;
   height: auto;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: 0.5s;
 }
 .destinos-destacados img:hover {
-  width: 92%;
-  height: auto;
-  box-shadow: 5px 5px 30px 0px #191919;
+  scale: 1.03;
+  box-shadow: 2px 2px 20px 0px black;
+}
+
+.destino-content {
+  width: 90%;
 }
 
 .container-img {
@@ -276,8 +307,7 @@ section h2 {
 .barco h3,
 .bus h3 {
   font-weight: 600;
-  background-color: black;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px;
 }
 
@@ -341,7 +371,7 @@ section h2 {
   width: 100%;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 20px;
   overflow: hidden;
   transition: 0.5s;
   position: relative;
@@ -412,13 +442,13 @@ section h2 {
 }
 .historia img {
   width: 80%;
-  border-radius: 30px;
+  border-radius: 20px;
   margin-top: 20px;
   transition: 0.5s;
 }
 .historia img:hover {
-  width: 90%;
-  box-shadow: 5px 5px 40px 0px black;
+  scale: 1.03;
+  box-shadow: 2px 2px 20px 0px black;
 }
 
 /* seccion de beneficios */
@@ -445,24 +475,29 @@ section h2 {
   display: flex;
   width: 100%;
   padding: 20px;
+  margin-bottom: 0;
 }
 
 .beneficio-item {
-  width: 100%;
+  width: 95%;
+  margin: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 2px solid #E18903;
+  border-radius: 20px;
+  transition: 0.5s;
   /* imagenes representativas de los beneficios */
 }
 .beneficio-item img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  border-radius: 10%;
+  border-radius: 20px 20px 0px 0px;
   transition: 0.5s;
 }
-.beneficio-item img:hover {
-  width: 90%;
-  box-shadow: 5px 5px 40px 0px black;
+.beneficio-item:hover {
+  scale: 1.03;
+  box-shadow: 2px 2px 20px 0px black;
 }
 
 /* formulario main */
@@ -470,7 +505,7 @@ form {
   background-color: white;
   padding: 20px;
   color: black;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 auto;
   display: block;
   width: 90%;
@@ -505,7 +540,7 @@ label {
   padding: 5px;
   margin: 5px;
   border: 2px outset #E18903;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: 0.5s;
   /* efecto a los botones mouse fondo naranja */
 }
@@ -520,7 +555,7 @@ label {
     background-color: #E18903;
     font-weight: 700;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 /* media para el header */
@@ -560,7 +595,7 @@ label {
   }
   .eslogan p {
     width: 70%;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px 0px;
     font-weight: 600;
     font-size: larger;
@@ -592,10 +627,6 @@ label {
     width: 30%;
     height: 30%;
   }
-  .historia img:hover {
-    width: 32%;
-    height: 32%;
-  }
   .beneficios-seccion {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -609,11 +640,7 @@ label {
     width: 100%;
   }
   .beneficio-item img {
-    width: 80%;
-    height: auto;
-  }
-  .beneficio-item img:hover {
-    width: 82%;
+    width: 100%;
     height: auto;
   }
 }
@@ -627,27 +654,20 @@ label {
 /* media para seccion destinos destacados */
 @media (min-width: 1024px) {
   .destinos-destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 30px 0px;
   }
-  .destinos-destacados h3 {
-    width: 20%;
-    height: fit-content;
+  .destino-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 20px;
   }
-  .destinos-destacados p {
-    text-align: left;
-    width: 25%;
-  }
-  .container-img {
-    width: 30%;
-  }
-  .destinos-destacados img {
-    width: 100%;
-    height: auto;
-  }
-  .destinos-destacados img:hover {
-    width: 105%;
+  .destino-description {
+    margin-top: 0;
+    margin: 5px 15px;
   }
 }
 /* media para banner transportes */
@@ -684,6 +704,15 @@ label {
 @media (min-width: 1024px) {
   .mapa {
     height: 350px;
+  }
+}
+/* media para footer */
+@media (min-width: 1024px) {
+  .social-container {
+    width: 55%;
+  }
+  .menu-container {
+    width: 20%;
   }
 }
 /* media para los social icon */

@@ -3,7 +3,7 @@ form {
     background-color: $light-color;
     padding: 20px;
     color: $dark-color;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 auto;
     display: block;
     width: 90%;
@@ -39,7 +39,7 @@ label {
     padding: 5px;
     margin: 5px;
     border: 2px outset $main-color;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: 0.5s;
 
     /* efecto a los botones mouse fondo naranja */

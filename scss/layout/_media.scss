@@ -5,7 +5,7 @@
         background-color: $main-color;
         font-weight: 700;
         padding: 5px 10px;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 }
 
@@ -53,7 +53,7 @@
 
     .eslogan p {
         width: 70%;
-        border-radius: 30px;
+        border-radius: 20px;
         padding: 10px 0px;
         font-weight: 600;
         font-size: larger;
@@ -90,11 +90,6 @@
         height: 30%;
     }
 
-    .historia img:hover {
-        width: 32%;
-        height: 32%;
-    }
-
     .beneficios-seccion {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -111,12 +106,7 @@
     }
 
     .beneficio-item img {
-        width: 80%;
-        height: auto;
-    }
-
-    .beneficio-item img:hover {
-        width: 82%;
+        width: 100%;
         height: auto;
     }
 }
@@ -131,32 +121,22 @@
 /* media para seccion destinos destacados */
 @media (min-width: 1024px) {
     .destinos-destacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
         align-items: center;
-        justify-content: space-evenly;
-        margin: 30px 0px;
     }
-
-    .destinos-destacados h3 {
-        width: 20%;
-        height: fit-content;
+    
+    .destino-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 20px;
     }
-
-    .destinos-destacados p {
-        text-align: left;
-        width: 25%;
-    }
-
-    .container-img {
-        width: 30%;
-    }
-
-    .destinos-destacados img {
-        width: 100%;
-        height: auto;
-    }
-
-    .destinos-destacados img:hover {
-        width: 105%
+    
+    .destino-description {
+        margin-top: 0;
+        margin: 5px 15px;
     }
 }
 
@@ -198,6 +178,16 @@
 @media (min-width: 1024px) {
     .mapa {
         height: 350px;
+    }
+}
+
+/* media para footer */
+@media (min-width: 1024px) {
+    .social-container{
+        width: 55%;
+    }
+    .menu-container{
+        width: 20%;
     }
 }
 

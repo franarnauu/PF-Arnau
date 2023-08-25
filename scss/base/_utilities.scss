@@ -22,3 +22,9 @@
     background-size: 100%;
     padding: 10%;
 }
+
+/* mixin para las sombras */
+@mixin shadow {
+    scale: 1.03;
+    box-shadow: 2px 2px 20px 0px $dark-color;
+}
