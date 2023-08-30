@@ -31,38 +31,20 @@
 
 /* media para el banner de inicio */
 @media (min-width: 1024px) {
-    .inicio {
-        background-size: 100%;
-        flex-wrap: wrap;
-        background-position-y: -150px;
+    #carouselExampleFade {
+        height: 700px;
     }
-
-    h1 {
+    .h1 {
         font-size: 400%;
         width: 100%;
         padding: 40px 20px;
         align-items: center;
     }
-
-    .eslogan {
-        margin-top: 120px;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
-
-    .eslogan p {
-        width: 70%;
-        border-radius: 20px;
-        padding: 10px 0px;
-        font-weight: 600;
-        font-size: larger;
-    }
 }
 
 /* media para los titulos h2 en desktop */
 @media (min-width: 1024px) {
-    section h2 {
+    .h2 {
         font-size: xx-large;
     }
 }

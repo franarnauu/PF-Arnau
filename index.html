@@ -79,14 +79,50 @@
     </header>
     <!-- main -->
     <main>
-        <section class="inicio">
-            <!-- banner inicio texto -->
-            <div>
-                <h1>TURISMO</h1>
-            </div>
-            <!-- eslogan -->
-            <div class="eslogan">
-                <p>Viajes extraordinarios, experiencias inolvidables</p>
+        <!-- Carrusel -->
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/landscape1.webp" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-md-block">
+                            <h1>Destino 1</h1>
+                            <p>Descripción del primer destino.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/landscape2.webp" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Destino 2</h2>
+                            <p>Descripción del segundo destino.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/landscape3.webp" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Destino 3</h2>
+                            <p>Descripción del tercer destino.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
         </section>
         <section><!-- boton wsp -->
@@ -99,7 +135,7 @@
         </section>
         <!-- destinos destacadaos -->
         <section>
-            <h2>Destinos destacados</h2>
+            <h2 class="h2">Destinos destacados</h2>
             <section class="destinos-destacados">
                 <div class="destino-content">
                     <h3>Buenos Aires, Argentina</h3>
@@ -147,11 +183,11 @@
                             legado
                             histórico de Roma y vive una experiencia inolvidable en la cuna de la civilización
                             occidental.</p>
-                        </div>
                     </div>
-                        <div class="container-img">
-                            <img src="assets/images/roma-italia.webp" alt="roma" class="destino-img">
-                        </div>
+                </div>
+                <div class="container-img">
+                    <img src="assets/images/roma-italia.webp" alt="roma" class="destino-img">
+                </div>
             </section>
             <section class="destinos-destacados">
                 <div class="destino-content">
@@ -166,11 +202,11 @@
                             sus barrios únicos, disfrutas de la variada gastronomía y te sumerges en la escena artística
                             y
                             teatral de Broadway. En Nueva York, la aventura y la emoción te esperan en cada esquina.</p>
-                        </div>
                     </div>
-                        <div class="container-img">
-                            <img src="assets/images/nueva-york.webp" alt="nueva york" class="destino-img">
-                        </div>
+                </div>
+                <div class="container-img">
+                    <img src="assets/images/nueva-york.webp" alt="nueva york" class="destino-img">
+                </div>
             </section>
             <section class="destinos-destacados">
                 <div class="destino-content">
@@ -184,17 +220,17 @@
                             sushi y ramen hasta deliciosos postres. Sumérgete en la cultura pop en el animado barrio de
                             Harajuku
                             y visita el Mercado de Pescado de Tsukiji.</p>
-                        </div>
                     </div>
-                        <div class="container-img">
-                            <img src="assets/images/tokio-japon.webp" alt="tokio" class="destino-img">
-                        </div>
+                </div>
+                <div class="container-img">
+                    <img src="assets/images/tokio-japon.webp" alt="tokio" class="destino-img">
+                </div>
             </section>
         </section>
         <!-- transportes disponibles -->
         <section>
             <div>
-                <h2>Nuestros transportes</h2>
+                <h2 class="h2">Nuestros transportes</h2>
                 <p class="subtitulos">Explora y viaja en grande: Descubre nuestros transportes inspiradores para una
                     experiencia inolvidable.</p>
             </div>
@@ -222,7 +258,7 @@
         </section>
         <!-- galeria de hoteles -->
         <section>
-            <h2>Nuestros Hoteles</h2>
+            <h2 class="h2">Nuestros Hoteles</h2>
         </section>
         <section class="gallery">
             <div class="hotel">

@@ -32,59 +32,51 @@
     }
 }
 
-/* titulo */
-.inicio {
-    color: $main-color;
-    background-image: url("../assets/images/banner-inicio.webp");
-    background-repeat: no-repeat;
-    background-size: 200%;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15%;
+/* Estilo para el carrusel y etiquetas */
+#carouselExampleFade {
+    height: 200px;
+}
 
-    div {
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-inner {
+    height: 100%;
+
+    .carousel-item {
+        height: 100%;
         display: flex;
-        width: 100%;
-        height: 20%;
+        align-items: center;
+
+        .carousel-caption {
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+
+            h1,
+            h2 {
+                margin: 0;
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
     }
 }
 
-h1 {
-    background-color: $dark-color;
-    border-radius: 20px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 5px;
-}
 
-/* posicion del eslogan */
-.eslogan {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-
-    /* eslogan */
-    p {
-        color: $dark-color;
-        font-size: 100%;
-        text-align: center;
-        background-color: $main-color;
-        width: 100%;
-        border-radius: 20px;
-        padding: 10px 0px;
-        font-weight: 600;
-    }
+.h1 {
+    @include h1;
 }
 
 /* titulos h2 subrayados */
-section h2 {
-    text-align: center;
-    margin: 30px 30px 20px 30px;
-    font-size: x-large;
+.h2 {
+    @include h2;
 }
 
 /* destinos banner */
