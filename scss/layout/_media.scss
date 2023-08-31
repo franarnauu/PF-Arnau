@@ -29,23 +29,32 @@
     }
 }
 
-/* media para el banner de inicio */
+/* media para el carrusel de inicio */
 @media (min-width: 1024px) {
     #carouselExampleFade {
         height: 700px;
     }
+
+    .d-block {
+        height: 700px;
+        object-fit: cover;
+    }
+
+    /*margin para que no ocupe todo el espacio el background*/
+    .carousel-caption {
+        margin: 0px 30px;
+    }
+
+    /* display flex para que en desktop se muestren los indicadores del carrusel */
+    .carousel-indicators {
+        display: flex;
+    }
+
     .h1 {
         font-size: 400%;
         width: 100%;
         padding: 40px 20px;
         align-items: center;
-    }
-}
-
-/* media para los titulos h2 en desktop */
-@media (min-width: 1024px) {
-    .h2 {
-        font-size: xx-large;
     }
 }
 
@@ -108,14 +117,14 @@
         gap: 20px;
         align-items: center;
     }
-    
+
     .destino-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 15px 20px;
     }
-    
+
     .destino-description {
         margin-top: 0;
         margin: 5px 15px;
@@ -147,6 +156,22 @@
     }
 }
 
+/* media para la seccion de contactanos */
+@media (min-width: 1024px) {
+    .contact-section {
+        .contact-content {
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
 /* media para pagina de contacto */
 @media (min-width: 1024px) {
     form {
@@ -165,10 +190,11 @@
 
 /* media para footer */
 @media (min-width: 1024px) {
-    .social-container{
+    .social-container {
         width: 55%;
     }
-    .menu-container{
+
+    .menu-container {
         width: 20%;
     }
 }

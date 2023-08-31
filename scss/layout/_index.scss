@@ -34,9 +34,16 @@
 
 /* Estilo para el carrusel y etiquetas */
 #carouselExampleFade {
-    height: 200px;
+    height: 500px;
 }
 
+/* imagen del carrusel */
+.d-block {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* indicadores del carrusel */
 .carousel-indicators {
     display: none;
 }
@@ -49,10 +56,12 @@
         display: flex;
         align-items: center;
 
+        /* texto del carrusel */
         .carousel-caption {
             padding: 10px;
-            color: white;
-            border-radius: 5px;
+            color: $main-color;
+            background-color: rgba(0, 0, 0, 0.95);
+            border-radius: 20px;
             text-align: center;
 
             h1,
@@ -68,7 +77,6 @@
         }
     }
 }
-
 
 .h1 {
     @include h1;
@@ -248,4 +256,56 @@
     font-size: 16px;
     padding: 10px;
     text-align: center;
+}
+
+/* seccion de contactanos */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../assets/images/contactanos.webp");
+    background-size: cover;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    padding: 20px;
+    margin: 20px 0px;
+
+    .contact-content {
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            font-size: x-large;
+            font-weight: 600;
+            color: $dark-color;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: large;
+            color: $dark-color;
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+    }
+
+    /* boton de contactanos */
+    .contact-button {
+        border: solid 3px $dark-color;
+        padding: 10px 20px;
+        width: fit-content;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 auto;
+        border-radius: 20px;
+        color: $main-color;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 0.5s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            scale: 1.3;
+        }
+    }
 }

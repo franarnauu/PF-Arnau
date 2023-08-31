@@ -174,9 +174,16 @@ nav {
 
 /* Estilo para el carrusel y etiquetas */
 #carouselExampleFade {
-  height: 200px;
+  height: 500px;
 }
 
+/* imagen del carrusel */
+.d-block {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* indicadores del carrusel */
 .carousel-indicators {
   display: none;
 }
@@ -188,11 +195,13 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
+  /* texto del carrusel */
 }
 .carousel-inner .carousel-item .carousel-caption {
   padding: 10px;
-  color: white;
-  border-radius: 5px;
+  color: #E18903;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 20px;
   text-align: center;
 }
 .carousel-inner .carousel-item .carousel-caption h1,
@@ -412,6 +421,53 @@ nav {
   text-align: center;
 }
 
+/* seccion de contactanos */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("../assets/images/contactanos.webp");
+  background-size: cover;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  padding: 20px;
+  margin: 20px 0px;
+  /* boton de contactanos */
+}
+.contact-section .contact-content {
+  width: 100%;
+  text-align: center;
+}
+.contact-section .contact-content h2 {
+  font-size: x-large;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+.contact-section .contact-content p {
+  font-size: large;
+  color: black;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+.contact-section .contact-button {
+  border: solid 3px black;
+  padding: 10px 20px;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: #E18903;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+.contact-section .contact-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  scale: 1.3;
+}
+
 /* sobre nosotros banner */
 .sobre-nosotros {
   color: #E18903;
@@ -570,22 +626,28 @@ label {
     font-size: large;
   }
 }
-/* media para el banner de inicio */
+/* media para el carrusel de inicio */
 @media (min-width: 1024px) {
   #carouselExampleFade {
     height: 700px;
+  }
+  .d-block {
+    height: 700px;
+    object-fit: cover;
+  }
+  /*margin para que no ocupe todo el espacio el background*/
+  .carousel-caption {
+    margin: 0px 30px;
+  }
+  /* display flex para que en desktop se muestren los indicadores del carrusel */
+  .carousel-indicators {
+    display: flex;
   }
   .h1 {
     font-size: 400%;
     width: 100%;
     padding: 40px 20px;
     align-items: center;
-  }
-}
-/* media para los titulos h2 en desktop */
-@media (min-width: 1024px) {
-  .h2 {
-    font-size: xx-large;
   }
 }
 /* media para banner sobre nosotros */
@@ -671,6 +733,15 @@ label {
   .bus {
     background-image: url("../assets/images/bus-desktop.webp");
     background-size: 150%;
+  }
+}
+/* media para la seccion de contactanos */
+@media (min-width: 1024px) {
+  .contact-section .contact-content h2 {
+    font-size: 2rem;
+  }
+  .contact-section .contact-content p {
+    font-size: 1.2rem;
   }
 }
 /* media para pagina de contacto */
