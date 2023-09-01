@@ -44,7 +44,9 @@ nav {
 
 .nav-link {
   color: #E18903;
+  border-radius: 20px;
   text-align: center;
+  font-weight: 600;
   transition: 0.5s;
 }
 
@@ -77,6 +79,9 @@ nav {
 .menu-container {
   width: 50%;
 }
+.menu-container h3 {
+  font-weight: 700;
+}
 
 .footer-menu {
   display: flex;
@@ -101,7 +106,9 @@ nav {
   color: #E18903;
   text-align: left;
   font-size: large;
+  font-weight: 600;
   display: inline-block;
+  transition: 0.5s;
 }
 .footer-list li a:hover {
   color: white;
@@ -109,6 +116,9 @@ nav {
 
 .social-container {
   width: 50%;
+}
+.social-container h3 {
+  font-weight: 700;
 }
 
 /* iconos de redes sociales */
@@ -200,24 +210,31 @@ nav {
 .carousel-inner .carousel-item .carousel-caption {
   padding: 10px;
   color: #E18903;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 20px;
   text-align: center;
+  transition: 0.5s;
+}
+.carousel-inner .carousel-item .carousel-caption:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+  scale: 1.05;
 }
 .carousel-inner .carousel-item .carousel-caption h1,
 .carousel-inner .carousel-item .carousel-caption h2 {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 .carousel-inner .carousel-item .carousel-caption p {
   margin: 0;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .h1 {
   background-color: black;
   border-radius: 20px;
-  font-weight: 600;
+  font-weight: 900;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -229,6 +246,7 @@ nav {
   text-align: center;
   margin: 30px 30px 20px 30px;
   font-size: x-large;
+  font-weight: 900;
   text-decoration: underline #E18903 4px;
 }
 
@@ -255,6 +273,7 @@ nav {
   border-radius: 20px;
   background-color: #E18903;
   width: 100%;
+  font-weight: 700;
   color: black;
   text-align: center;
   justify-content: center;
@@ -290,6 +309,25 @@ nav {
   justify-content: center;
 }
 
+/* seccion galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.galeria img {
+  width: calc(50% - 20px);
+  height: 200px;
+  margin: 5px 10px;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+.galeria img:hover {
+  scale: 1.1;
+  border: 3px solid #E18903;
+}
+
 /* banner de transportes */
 .transportes {
   color: #E18903;
@@ -303,7 +341,7 @@ nav {
 /* subtitulo del h2 de transporte */
 .subtitulos {
   width: 100%;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   text-align: center;
 }
 
@@ -311,7 +349,7 @@ nav {
 .avion h3,
 .barco h3,
 .bus h3 {
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 20px;
   padding: 10px;
 }
@@ -325,7 +363,7 @@ nav {
   border-radius: 20px;
   font-size: medium;
   padding: 10px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* transporte avion */
@@ -441,7 +479,7 @@ nav {
 }
 .contact-section .contact-content h2 {
   font-size: x-large;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
   margin-bottom: 10px;
 }
@@ -456,7 +494,7 @@ nav {
   padding: 10px 20px;
   width: fit-content;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 auto;
   border-radius: 20px;
   color: #E18903;
@@ -466,6 +504,7 @@ nav {
 .contact-section .contact-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   scale: 1.3;
+  box-shadow: 0 0 1px #E18903, 0 0 6px #E18903, 0 0 12px #E18903, 0 0 25px #E18903, 0 0 50px #E18903;
 }
 
 /* sobre nosotros banner */
@@ -574,6 +613,7 @@ form {
   outline: none;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 20px;
   width: 90%;
   transition: 0.5s;
   /* efecto al presionar la caja para escribir */
@@ -591,7 +631,7 @@ label {
   width: 90%;
   padding: 5px;
   margin: 5px;
-  border: 2px outset #E18903;
+  border: 2px solid #E18903;
   border-radius: 20px;
   transition: 0.5s;
   /* efecto a los botones mouse fondo naranja */
@@ -605,9 +645,8 @@ label {
   .nav-link:hover {
     color: black;
     background-color: #E18903;
-    font-weight: 700;
+    font-weight: 800;
     padding: 5px 10px;
-    border-radius: 20px;
   }
 }
 /* media para el header */
@@ -713,6 +752,31 @@ label {
     margin: 5px 15px;
   }
 }
+@media (min-width: 1024px) {
+  .galeria {
+    width: 100%;
+    height: 530px;
+    margin-bottom: 70px;
+    overflow: hidden;
+  }
+  .galeria img {
+    width: 0px;
+    height: 100%;
+    flex-grow: 1;
+    margin: 0;
+    opacity: 0.8;
+    border-radius: 0;
+    transition: 0.5s ease;
+  }
+  .galeria img:hover {
+    cursor: crosshair;
+    border: 0;
+    z-index: 1;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+}
 /* media para banner transportes */
 @media (min-width: 1024px) {
   .transportes {
@@ -776,6 +840,12 @@ label {
   .social-icon img:hover {
     width: 110px;
     height: auto;
+  }
+}
+/* media para cambiar el size de los h2 en desktop */
+@media (min-width: 1024px) {
+  .h2 {
+    font-size: xx-large;
   }
 }
 

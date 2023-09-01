@@ -27,7 +27,9 @@ nav {
 
 .nav-link {
     color: $main-color;
+    border-radius: 20px;
     text-align: center;
+    font-weight: 600;
     transition: 0.5s;
 }
 
